@@ -20,5 +20,6 @@ logWatch('HELLO') => HELLO (18:7:4.442)
 
 logWatch('HELLO', [{x: 30, y: 25}]) =>  HELLO (18:7:4.442)
 
-| id |  x  |  y  |
-| 0  | 30  |  25 | 
+id | x | y
+--- | --- | ---
+0 | 30 | 25

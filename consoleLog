@@ -1,0 +1,15 @@
+
+const logWatch = (anchor: string, watches: any = '') => {
+  const time = logTime()
+  if (Array.isArray(watches)) {
+    console.log(`\n%c ${anchor} (${time})`, 'background: white; color: green; font-weight: bold; font-size: 12px')
+    console.table(watches)
+  } else {
+    console.log(`\n%c ${anchor} (${time}): `, 'color: green; font-size: 12px', watches)
+  }
+}
+
+const logTime = () => {
+  const date = new Date()
+  return `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}.${date.getMilliseconds()}`
+}

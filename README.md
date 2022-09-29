@@ -12,7 +12,9 @@ const options = {
 
 log('hello', options, 'TERMINAL LOG')
 
-// consoleLog file
+// [consoleLog] File
+
+E.g:
 
 logWatch('HELLO') => HELLO (18:7:4.442)
 
@@ -24,7 +26,9 @@ logWatch('HELLO', [{x: 30, y: 25}]) =>  HELLO (18:7:4.442)
 --- | --- | ---
 0 | 30 | 25
 
-// With customize color | Can show msg or table
+// [logCustomize] File: With customize color | Can show msg or table
+
+E.g:
 
 logBlock('hello', {
   color: '127',

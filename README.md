@@ -48,3 +48,13 @@ logBlock('hello', {
   table: [{ x: 3, y: 5 }],
 })
 
+// Style:
+
+Style | Code
+--- | ---
+Bold	| \x1B[1m
+Faint	| \x1B[2m
+Italic	| \x1B[3m
+Underlined	| \x1B[4m
+Inverse	| \x1B[7m
+Strikethrough	| \x1B[9m

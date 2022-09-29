@@ -19,8 +19,7 @@ E.g:
 
 `logWatch('HELLO')` => HELLO (18:7:4.442)
 
----
-### Show Table
+##### Show Table
 
 `logWatch('HELLO', [{x: 30, y: 25}])` =>  HELLO (18:7:4.442)
 
@@ -28,7 +27,8 @@ E.g:
 --- | --- | ---
 0 | 30 | 25
 
-// [logCustomize] File: With customize color | Can show msg or table
+---
+### [logCustomize] File: With customize color | Can show msg or table
 
 E.g:
 ```

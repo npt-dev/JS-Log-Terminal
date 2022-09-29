@@ -2,7 +2,7 @@
 Show log in terminal
 
 Example:
-
+```
 const options = {
   background: BACKGROUND.bgYellow,
   color: COLOR.fgGreen,
@@ -11,16 +11,18 @@ const options = {
 }
 
 log('hello', options, 'TERMINAL LOG')
-
-// [consoleLog] File
+```
+---
+### [consoleLog] File
 
 E.g:
 
-logWatch('HELLO') => HELLO (18:7:4.442)
+`logWatch('HELLO')` => HELLO (18:7:4.442)
 
-// Show Table
+---
+### Show Table
 
-logWatch('HELLO', [{x: 30, y: 25}]) =>  HELLO (18:7:4.442)
+`logWatch('HELLO', [{x: 30, y: 25}])` =>  HELLO (18:7:4.442)
 
 (index) | x | y
 --- | --- | ---
@@ -29,7 +31,7 @@ logWatch('HELLO', [{x: 30, y: 25}]) =>  HELLO (18:7:4.442)
 // [logCustomize] File: With customize color | Can show msg or table
 
 E.g:
-
+```
 logBlock('hello', {
   color: '127',
   background: '47',
@@ -47,8 +49,10 @@ logBlock('hello', {
   background: [124, 21, 56],
   table: [{ x: 3, y: 5 }],
 })
+```
 
-// Style:
+---
+### Style:
 
 Style | Code
 --- | ---
@@ -58,3 +62,16 @@ Italic	| \x1B[3m
 Underlined	| \x1B[4m
 Inverse	| \x1B[7m
 Strikethrough	| \x1B[9m
+
+---
+### Cursor Manipulation
+
+effect | code | 
+ ---  |  ---  | 
+Goes back one character | \b | 
+Moves one line up | \x1B[A | 
+Moves n lines up (replace N by the number of lines) | \x1B[NA | 
+Goes back to the begining of the line | \r | 
+Goes back to the begining of the previous line | \x1B[F | 
+Goes back to the begining of the n-th previous line (replace N by the number of lines) | \x1B[NF | 
+Erases the whole line | \x1B[2K | 
